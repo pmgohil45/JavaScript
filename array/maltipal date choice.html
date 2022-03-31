@@ -1,0 +1,36 @@
+<html>
+<body>
+<script language="JavaScript" type="text/JavaScript">
+//accept choice & perform operation
+
+	var c=prompt("Enter ur choice :: 1 for current date, 2 for get year, 3 for get month, 4 for get day");
+
+/*	var a = parseFloat(prompt("enter number 1"));
+	var b = parseFloat(prompt("enter number 2"));
+	document.write("a = " + a + "<br>");
+	document.write("b = " + b + "<br>");
+	document.write("your choice is : " + c + "<br>");
+*/
+	var d = new Date();
+	switch(c)
+	{
+	case '1':
+		d;
+		document.write("today date is = " + d + "<br>");
+		break;
+	case '2':
+		d;
+		document.write("this year is = " + d.getFullYear() + "<br>");
+		break;
+	case '3':
+		d;
+		document.write("this month is = " + d.getMonth() + "<br>");
+		break;
+	case '4':
+		d;
+		document.write("this da of week = " + d.getDay() + "<br>");
+		break;
+	}
+</script>
+</body>
+</html>

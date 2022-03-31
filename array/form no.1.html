@@ -1,0 +1,137 @@
+<html>
+<head>
+	<title>
+		form no.1
+	</title>
+<script language="JavaScript" type="text/JavaScript">
+	function checkform()
+	{
+	var x = document.getElementById("uid").value;
+	var p = document.getElementById("pwd1").value;
+	var p1 = document.getElementById("pwd1").value;
+	var p2 = document.getElementById("pwd2").value;
+	var c = document.getElementById("country").value;
+	var zcode = document.getElementById("zip").value;
+	//validation = user id
+		if(document.f1.uid.value!=="")
+		{
+			if(!(x.length >= 5 && x.length <= 12))
+			{
+				alert("user id must be between 5 to 12 character long");
+			}
+		}
+		else
+		{
+			alert("you must have to enter user id");
+			document.f1.uid.focus();
+		}
+	//validation = password 1
+		if(document.f1.pwd1.value!=="")
+		{
+			var a = document.getElementById("pwd1").value;
+			if(!(a.length >= 7 && a.length <= 12))
+			{
+				alert("Password must be between 7 to 12 digits");
+			}
+		}
+		else
+		{
+			alert("Enter Password");
+			}
+	//validation = password 2
+		if(!(p1.length==p2.length))
+		{
+			alert("Password and Re-Password are not match");
+		}
+	//validation = name
+		if(document.f1.n1.value=="")
+		{
+			alert("Enter your name");
+		}
+	//validation = country
+		if(!(document.f1.country.value.select==""))
+		{
+			alert("Please select country");
+		}
+	}
+</script>
+</head>
+<body>
+<form name="f1" onSubmit="checkform()">
+<h1 align="center">
+	Ragistration Form
+</h1>
+<table align="center" cellspacing="5">
+<tr>
+	<th align="right"> User Id : </th>
+	<td> <input type="text" name="uid" id="uid"> <font color="red">*</font></td>
+</tr>
+<tr>
+	<th align="right"> Password : </th>
+	<td> <input type="text" name="pwd1" id="pwd1"> <font color="red">*</font></td>
+</tr>
+<tr>
+	<th align="right">Re - Password : </th>
+	<td><input type="text" name="pwd2" id="pdw2"> <font color="red">*</font></td>
+</tr>
+<tr>
+	<th align="right">Name : </th>
+	<td><input type="text" name="n1" id="n1"> <font color="red">*</font></td>
+</tr>
+<tr>
+	<th align="right">Address : </th>
+	<td><textarea rows="5" cols="20" name="add" id="add"> </textarea></td>
+</tr>
+<tr>
+	<th align="right">Country : </th>
+	<td>
+		<select name="country" id="country">
+			<option> India </option>
+			<option> Landon </option>
+			<option> America</option>
+			<option> Japan</option>
+			<option> Chain</option>
+			<option> Englend</option>
+			<option selected> Choose the country</option>
+		</select> <font color="red">*</font>
+	</td>
+</tr>
+<tr>
+	<th align="right">ZIP Code : </th>
+	<td><input type="text" name="zip" id="zip"> <font color="red">*</font></td>
+</tr>
+<tr>
+	<th align="right">Email : </th>
+	<td><input typr="text" name="em" id="em"> <font color="red">*</font></td>
+</tr>
+<tr>
+	<th align="right">Gender : </th>
+	<td>
+		<input type="radio" name="gen" id="gm">Male
+		<input type="radio" name="gen" id="gf">Female <font color="red">*</font>
+	</td>
+</tr>
+<tr>
+	<th align="right">Language : </TH>
+	<td>
+		<input type="checkbox" name="eng" id="eng">English
+		<input type="checkbox" name="hin" id="hin">Hindi
+		<input type="checkbox" name="guj" id="guj">Gujarati <font color="red">*</font>
+	</td>
+</tr>
+<tr>
+	<th align="right">About : </th>
+	<td><input type="text" name="abo" id="abo"></td>
+</tr>
+<tr>
+	<th colspan="2" align="center">
+		<input type="submit" value="Send" name="sub" id="sub">
+	</th>
+</tr>
+</table>
+<h2 align="right">
+	Made by <b><u><i>Pm Gohil<b><u><i>
+</h2>
+</form>
+</body>
+</html>
