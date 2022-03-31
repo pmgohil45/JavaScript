@@ -1,0 +1,31 @@
+<html>
+<head>
+	<script language="JavaScript" type="text/JavaScript">
+	function marge()
+	{
+		var nm = document.getElementById("t1").value;
+		var snm = document.getElementById("t2").value;
+		var fullname = nm + " " + snm;
+		document.getElementById("t3").value = fullname;
+	}
+	</script>
+</head>
+<body>
+<table align="center">
+<tr>
+	<td>Enter ur name : </td>
+	<td><input type="text"id="t1"> </td>
+</tr>
+<tr>
+	<td>Enter ur surname : </td>
+	<td><input type="text" id="t2"> </td>
+</tr>
+<tr>
+	<td>Comptet name : </td>
+	<td><input type="text" id="t3"> </td>
+</tr>
+<tr>
+	<td><input type="button" value="Marge nm" id="t4" onClick="marge()"> </td>
+</tr>
+</body>
+</html>

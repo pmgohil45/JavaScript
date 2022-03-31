@@ -1,0 +1,31 @@
+<html>
+<body background="D:\PRAKASH M. GOHIL\Pictures\Mig - 24\E.T.C. photo\collage_1530197944701.png">
+<font size="6">
+<script language="JavaScript" type="text/JavaScript">
+
+//print that eligibal or not eligibal for voating
+
+	var dt = new Date();
+	document.write("current date : " + dt + "<br>");
+
+	var current_year = dt.getFullYear();
+
+	var birth_year = prompt("Please enter your birth year : ")
+	document.write("your birth year : " + birth_year + "<br>");
+
+	var age = current_year - birth_year;
+	document.write("your age : " + age + "<br>");
+
+	if(18 <= age)
+	{
+		document.write("you are eligible for the voating");
+	}
+	else
+	{
+		document.write("you are not eligible for the voating");
+	}
+
+</script>
+</font>
+</body>
+</html>

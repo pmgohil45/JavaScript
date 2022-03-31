@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title> getElementById().innerHTML</title>
+	<script language="JavaScript" type="text/JavaScript">
+		function total()
+		{
+			var a, b, c, ans;
+			a = parseInt(prompt("Enter a nos. of 1 : "));
+			b = parseInt(prompt("Enter a nos. of 2 : "));
+			c = parseInt(prompt(" Enter a nos. of 3 : "));
+
+			ans = a + b + c;
+			document.getElementById("sum").innerHTML=ans;
+			alert("Total of sum" + ans);
+		}
+	</script>
+</head>
+<body>
+<b>
+	<p id="sum">* Sum of 3 nos. *</p>
+</b>
+<input type="button" value="Sum" onClick="total()">
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<body>
+<script language="JavaScript" type="text/JavaScript">
+//print that ur eligible or not eligible for voating
+
+	var dt = new Date();
+	document.write("current date : " + dt + "<br>");
+
+	var c_y = dt.getFullYear();
+
+	var b_y = prompt("Please enter ur birth year in 4 digit : ");
+	document.write("Ur birth year : " + b_y + "<br>");
+
+	age = c_y - b_y;
+	document.write("Age : " + age + "<br>");
+
+	if (age >= 18)
+	{
+		document.write("Ys, ur eligible for the voting" + "<br>");
+	}
+	else
+	{
+		document.write("No, ur not eligible for the voting" + "<br>");
+	}
+</script>
+</body>
+</html>
