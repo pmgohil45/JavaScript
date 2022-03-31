@@ -1,0 +1,39 @@
+<html>
+<body>
+<script language="JavaScript" type="text/JavaScript">
+//program to check inputed numbers is positive & print
+	var M1, M2, M3, M4, T, A;
+	M1=parseFloat(prompt("Marks of Networking & Internet Enviornment"));
+	M2=parseFloat(prompt("Marks of Computer Fundamentals & Emerging Technology"));
+	M3=parseFloat(prompt("Marks of Computer Language"));
+	M4=parseFloat(prompt("Marks of Technical Communication Skil"));
+
+	document.write("<font color='darkblue' size='6'>");
+	document.write("NET = " + M1 + "<BR>");
+	document.write("CF = " + M2 + "<BR>");
+	document.write("CL = " + M3 + "<BR>");
+	document.write("TCS = " + M4 + "<BR>");
+	document.write("</font>");
+
+	if(M1>40 && M2>40 && M3>40)
+		{
+			T = M1 + M2 + M3 + M4;
+			A = T/4
+			document.write("<font color='magento' size='6'>");
+			document.write("Total = " + T + "<BR>");
+			document.write("Avarage = " + A + "<br>");
+			document.write("Result = PASS" + "<BR>");
+			document.write("</font>");
+		}
+
+	else
+		{
+			document.write("<font color='red' size='6'>");
+			document.write("Result = FAIL" + "<br>");
+			document.write("Try to Next Year" + "<br>");
+			document.write("</font>");
+		}
+
+</script>
+</body>
+</html>
