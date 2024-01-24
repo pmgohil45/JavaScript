@@ -1,0 +1,59 @@
+<html>
+<head>
+<script language="JavaScript" type="text/JavaScript">
+//Program to wap. that print result
+	var m1, m2, m3, t, p;	//total, PR
+	m1=parseInt(prompt("Enter marks of CF"));
+	m2=parseInt(prompt("Enter marks of CL"));
+	m3=parseInt(prompt("Enter marks of INT"));
+
+	document.write("CF = " + m1 + "<br>");
+	document.write("CL = " + m2 + "<br>");
+	document.write("INT = " + m3 + "<br>");
+
+	if(m1>=40 && m2>=40 && m3>=40)
+	{
+		t = (m1 + m2 + m3);	//p = (m1 + m2 + m3 / 3)
+		p = t/3;
+
+		if(p > 80 && p <= 100)
+		{
+			document.write("Total = " + t + "<br>");
+			document.write("PR = " + p + "<br>");
+			document.write("Gread = A" + "<br>");
+		}
+
+		if(p > 60 && p <= 80)
+		{
+			document.write("Total = " + t + "<br>");
+			document.write("PR = " + p + "<br>");
+			document.write("Gread = B" + "<br>");
+		}
+
+		if(p > 50 && p <= 60)
+		{
+			document.write("Total = " + t + "<br>");
+			document.write("PR = " + p + "<br>");
+			document.write("Gread = C" + "<br>");
+		}
+
+		if(p >= 40 && p <= 50)
+		{
+			document.write("Total = " + t + "<br>");
+			document.write("PR = " + p + "<br>");
+			document.write("Gread = D" + "<br>");
+		}
+	}
+
+	else
+	{
+		t = m1 + m2 + m3;
+		document.write("Total = " + t + "<br>");
+		document.write("Gread = FAIL" + "<br>");
+		document.write("Try again next year" + "<br>");
+	}
+
+
+</script>
+</head>
+</html>

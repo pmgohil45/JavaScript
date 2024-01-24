@@ -1,0 +1,60 @@
+<html>
+<head>
+<script language="JavaScript" type="text/JavaScript">
+//Progtam to salse per commission and amount WAP. that print commission and amount
+	var s, a, c, t;	// salse, commission, amount, total
+	s=parseInt(prompt("Enter a salse"));
+	document.write("Inputed value = " + s + "<br>");
+	if(s < 5000)
+	{
+		a=5000;
+		document.write("Total Salary = " + a + "<br>");
+		document.write("Up ur salse after get ur commission" + "<br>");
+	}
+
+	else if(s > 5000 && s < 10000)
+	{
+		a = 8000;
+		c = s * 0.05;
+		t = a + c;
+		document.write("Amount = " + a + "<br>");
+		document.write("Total Commission = " + c + "<br>");
+		document.write("Total Salary = " + t + "<br>");
+	}
+
+	else if(s > 10000 && s < 20000)
+	{
+		a = 12000;
+		c = s * 0.10;
+		t = a + c;
+		document.write("Amount = " + a + "<BR>");
+		document.write("Total Commission = " + c + "<BR>");
+		document.write("Total Salary = " + t + "<BR>");
+	}
+
+	else if(s > 20000 && s < 30000)
+	{
+		a = 25000;
+		c = s * 0.15;
+		t = a + c;
+		document.write("Amount = " + a + "<BR>");
+		document.write("Total Commission = " + c + "<BR>");
+		document.write("Total Salary = " + t + "<BR>");
+
+	}
+
+	else 	//s > 30000
+	{
+		a = 35000;
+		c = (s * 0.25);
+		t = a + c;
+		document.write("Amount = " + a + "<br>");
+		document.write("Total Commission = " + c + "<br>")
+		document.write("Total Salary = " + t + "<br>");
+	}
+		
+
+
+</script>
+</head>
+</html>
