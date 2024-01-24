@@ -1,0 +1,35 @@
+<html>
+<body>
+<script language="JavaScript" type="text/JavaScript">
+//accept choice & perform operation
+
+	var c=prompt("Enter ur choice :: + for addition, - for subtraction, * for multiplication, / for division");
+
+	var a = parseFloat(prompt("enter number 1"));
+	var b = parseFloat(prompt("enter number 2"));
+	document.write("a = " + a + "<br>");
+	document.write("b = " + b + "<br>");
+	document.write("your choice is : " + c + "<br>");
+
+	switch(c)
+	{
+	case '+':
+		total = a + b;
+		document.write("sum of a + b = " + total + "<br>");
+		break;
+	case '-':
+		total = a - b;
+		document.write("sum of a - b = " + total + "<br>");
+		break;
+	case '*':
+		total = a * b;
+		document.write("sum of a * b = " + total + "<br>");
+		break;
+	case '/':
+		total = a / b;
+		document.write("sum of a / b = " + total + "<br>");
+		break;
+	}
+</script>
+</body>
+</html>

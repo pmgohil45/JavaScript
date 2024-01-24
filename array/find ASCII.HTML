@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script language="JavaScript">
+	function asky(event)
+	{
+		var x = event.keyCode || e.which;
+		document.getElementById("ascii").innerHTML = x;
+	}
+	</script>
+</head>
+<body>
+<font size="5">
+	<h1> ASCII </h1>
+	Enter any key to find ascii value : <br>
+	<input type="text" id="txt1" onkeyPress="asky(event)"> <br>
+	<p id="ascii">
+	</p>
+</font>
+</body>
+</html>
