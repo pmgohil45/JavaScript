@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title> Image change </title>
+	<script language="JavaScript" type="text/JavaScript">
+	//when user is mouse over on image size is incrise and mouse is out on image size is decrise....
+	function incris()
+	{
+		var a = document.getElementById("img1");
+		a.height = 400;
+		a.width = 400;
+		a.border = 10;
+	}
+
+	function dcris()
+	{
+		var a = document.getElementById("img1");
+		a.height = 100;
+		a.width= 100;
+		a.border = 2;		
+	}
+	</script>
+</head>
+<body>
+<center>
+	<img id="img1" width="200" height="200" onMouseOver="incris()" onMouseOut="dcris()" src="D:\PRAKASH M. GOHIL\Pictures\images (4).jpeg">
+	</img>
+</center>
+
+</body>
+</html>

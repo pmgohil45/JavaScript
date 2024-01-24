@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>User change bg/fg</title>
+	<script language="JavaScript" type="text/JavaScript">
+		function cFC()
+		{
+
+			document.fgColor='darkpink';
+		}	
+		function cBG(b,a)
+		{
+
+			document.bgColor=b;
+			document.fgColor=a;
+		}
+	</script>
+</head>
+<body>
+<h1 align="center" onMouseOver="cBG('blue','magenta')" onMouseOut="cBG('yellow','cyan')">Prakash Gohil study in Geetangali collage</h1>
+<input type="button" value="display text" onClick="cFC()">
+<input type="button" value="chang color" ondblClick="cBG('darkgreen')">
+</body>
+</html>

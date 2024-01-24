@@ -1,0 +1,24 @@
+<html>
+<body>
+<script type="text/JavaScript" language="JavaScript">
+// that print only month, year, fullyear, day
+//hours, minutes, seconds, milliseconds,
+
+	var dt;
+	dt = new Date();
+	document.write("Current date is : " + dt + "<br>");
+
+	document.write("current day is : " + dt.getDay() + "<br>");	//Return day
+	document.write("current month is : " + dt.getMonth() + "<br>");	//Index value......,,January = 0
+	document.write("current year is : " + dt.getYear() + "<br>");	//Return year in last 2 digit
+	document.write("current Full year : " + dt.getFullYear() + "<br>");	//Return Year in 4 digit
+
+	document.write("current Hours is = " + dt.getHours() + "<br>");
+	document.write("current Minutes is = " + dt.getMinutes() + "<br>");
+	document.write("current Seconds is = " + dt.getSeconds() + "<br>");
+	document.write("current Milliseconds is = " + dt.getMilliseconds() + "<br>");
+
+
+</script>
+</body>
+</html>
