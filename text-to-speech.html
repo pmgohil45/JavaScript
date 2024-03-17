@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Text to Speech</title>
+</head>
+<body>
+	<h1>Text-to-Speech</h1>
+	<textarea id="ta" rows="10" cols="40"></textarea><br /><br />
+	<button id="btn" onclick="speak()">Click to Speak</button>
+	
+	<script>
+		function speak(){
+			let synth = window.speechSynthesis;
+			let voice = new SpeechSynthesisUtterance(`${ta.value}`)
+			synth.speak(voice);
+		}
+	</script>
+
+</body>
+</html>
